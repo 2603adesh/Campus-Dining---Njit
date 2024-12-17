@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="mstyles.css"> <!-- Link to your menu styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header-logo">
+        <div class="logo-container">
+            <span class="logo-text">NJIT</span>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="dining-hours.html">Dining Hours & Location</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="menu">
+            <!-- Filter Options -->
+            <h1>Menu</h1>
+        <p>Find the perfect meal for your day. Use the filters to match your dietary preferences!</p>
+            <div class="dropdown">
+                <label for="location-dropdown">Select Location:</label>
+                <select id="location-dropdown" name="location">
+                    <option value="highlander">Highlander Commons</option>
+                    <option value="bonsai">Bonsai Sushi</option>
+                    <option value="forte">Forte Pizzeria</option>
+                    <option value="cstore">C-Store Express</option>
+                    <option value="techcafe">Tech Cafe</option>
+                </select>
+            </div>
+            <div class="dropdowns">
+                <label for="day-dropdown">Select Meal Time:</label>
+                <select id="day-dropdown" name="meal-day">
+                    <option value="sunday">Sunday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                </select>
+            </div>
+            <div class="dropdowns">
+                <label for="meal-dropdown">Select Meal Time:</label>
+                <select id="meal-dropdown" name="meal-time">
+                    <option value="all" selected>All Meals</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            
+            <div class="filters">
+                <h2>Filter by Diet</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+                    <button class="filter-btn" data-filter="vegan">Vegan</button>
+                    <button class="filter-btn" data-filter="gluten-free">Gluten-Free</button>
+                </div>
+            </div>
+
+            <!-- Menu List -->
+            <ul class="menu-list">
+                <li class="item breakfast vegetarian">Pancakes - <span class="tag vegetarian">Vegetarian</span></li>
+                <li class="item breakfast vegetarian">Waffles - <span class="tag vegetarian">Vegetarian</span></li>
+                <li class="item vegan">Oatmeal - <span class="tag vegan">Vegan</span></li>
+                <li class="item breakfast gluten-free">Scrambled Eggs - <span class="tag gluten-free">Gluten-Free</span></li>
+                <li class="item lunch vegetarian">Grilled Cheese Sandwich - <span class="tag vegetarian">Vegetarian</span></li>
+                <li class="item lunch vegan">Quinoa Salad - <span class="tag vegan">Vegan</span></li>
+                <li class="item dinner gluten-free">Chicken Tacos - <span class="tag gluten-free">Gluten-Free</span></li>
+                <li class="item lunch">Macaroni and Cheese</li>
+                <li class="item lunch">French Fries</li>
+                <li class="item dinner vegetarian">Margherita Pizza - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item lunch vegan">Stir-Fried Vegetables - <span class="tag vegan">Vegan</span></li>
+            <li class="item lunch gluten-free">Grilled Salmon - <span class="tag gluten-free">Gluten-Free</span></li>
+            <li class="item lunch dinner vegan">Vegan Burger - <span class="tag vegan">Vegan</span></li>
+            <li class="item lunch">Buffalo Wings</li>
+            <li class="item dinner ">Turkey Sandwich</li>
+            <li class="item breakfast vegetarian">Caprese Salad - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item dinner vegan">Hummus Wrap - <span class="tag vegan">Vegan</span></li>
+            <li class="item gluten-free">Grilled Chicken Breast - <span class="tag gluten-free">Gluten-Free</span></li>
+    
+            <!-- Dinner Items -->
+            <li class="item lunch">Roast Beef</li>
+            <li class="item dinner gluten-free">Baked Potato - <span class="tag gluten-free">Gluten-Free</span></li>
+            <li class="item dinner vegetarian">Stuffed Bell Peppers - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item breakfast vegan">Lentil Soup - <span class="tag vegan">Vegan</span></li>
+    
+            <!-- Dessert Items -->
+            <li class="item lunch">Apple Pie</li>
+            <li class="item dinner gluten-free">Vanilla Pudding - <span class="tag gluten-free">Gluten-Free</span></li>
+            <li class="item lunch">Brownies</li>
+            <li class="item lunch vegetarian">Cheesecake - <span class="tag vegetarian">Vegetarian</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NJIT Dining Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="menu.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>

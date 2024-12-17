@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header-logo">
+        <div class="logo-container">
+            <span class="logo-text">NJIT</span>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="dining-hours.html">Dining Hours & Location</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+       
+        <h1>Contact Us</h1>
+        <p>We’re here to help! Reach out for any questions or assistance.</p>
+        <!-- Contact Section with Info and Form -->
+        <section class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:dining@njit.edu">dining@njit.edu</a></li>
+                    <li><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br> NJIT Dining Services, <br>123 University Ave, Newark, NJ 07102</li>
+                </ul>
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday & Sunday: Closed</p>
+            </div>
+
+            <!-- Inquiry Section -->
+            <div class="quick-inquiry">
+                <h2>Quick Inquiry</h2>
+                <p>If you have a simple question or need help quickly, feel free to fill out this form. We’ll get back to you as soon as possible.</p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Inquiry:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your question here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+                <p class="faq-link">Have common questions? Check out our <a href="#">FAQs</a>.</p>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8360519091284!2d-74.17609818460158!3d40.74284697932844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253f11aa7e4b1%3A0xa3dc8691a1f1b4fa!2sNew%20Jersey%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1692824534821!5m2!1sen!2sus" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NJIT Dining Services. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Font Awesome Script for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

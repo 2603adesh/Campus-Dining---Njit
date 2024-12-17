@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Experience App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+        </head>
+
+<body>
+    <header class="header-logo">
+        <div class="logo-container">
+            <span class="logo-text">NJIT</span>
+        </div>
+    </header>
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="dining-hours.html">Dining Hours & Location</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+    <div class="container" id="home">
+        <div class="search-bar">
+            <i class="fas fa-search"></i> 
+            <input type="text" placeholder="Search meals or dining halls...">
+        </div>
+        
+    </div>
+    <section class="top">
+    <section class="locations">
+    <h1>What's Open?</h1>
+        <a href="dining-hours.html" class="all-hours-link">All hours →</a>
+        
+            <!-- Individual Location -->
+            <div class="location closed">
+                <h3>University Club</h3>
+                <p class="status">Closed. Opens Monday at 8:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Bonsai Sushi</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Faculty Dining</h3>
+                <p class="status">Closed. Opens 1/21/25 at 11:30am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Highlander Commons</h3>
+                <p class="status">Closed. Opens tomorrow at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Forte Pizzeria</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>C-Store Express</h3>
+                <p class="status">Closed. Opens Monday at 8:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Tech Cafe</h3>
+                <p class="status">Closed. Opens Monday at 8:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Gourmet Sandwich Shop</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Farm to Campus Salads</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Taco Bell</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Highlander Pub</h3>
+                <p class="status">Closed. Opens 1/21/25 at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Smashburger</h3>
+                <p class="status">Closed. Opens Monday at 11:00am.</p>
+            </div>
+            <div class="location closed">
+                <h3>Village Market</h3>
+                <p class="status">Closed. Opens tomorrow at 9:00am.</p>
+            </div>
+        </section>
+
+   <section class="menu">
+       
+        <h1>Today's Menu</h1>
+        <div class="dropdown">
+            <label for="location-dropdown">Select Location:</label>
+            <select id="location-dropdown" name="location">
+                <option value="highlander">Highlander Commons</option>
+                <option value="bonsai">Bonsai Sushi</option>
+                <option value="forte">Forte Pizzeria</option>
+                <option value="cstore">C-Store Express</option>
+                <option value="techcafe">Tech Cafe</option>
+            </select>
+        </div>
+        <div class="dropdowns">
+            <label for="meal-dropdown">Select Meal Time:</label>
+            <select id="meal-dropdown" name="meal-time">
+                <option value="all" selected>All Meals</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <label>
+                <input type="radio" name="filter" value="all" checked> All
+            </label>
+            <label>
+                <input type="radio" name="filter" value="vegetarian"> Vegetarian
+            </label>
+            <label>
+                <input type="radio" name="filter" value="vegan"> Vegan
+            </label>
+            <label>
+                <input type="radio" name="filter" value="gluten-free"> Gluten-Free
+            </label>
+        </div>
+    
+        <!-- Menu Items -->
+        <ul class="menu-list">
+            <li class="item breakfast vegetarian">Pancakes - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item breakfast vegetarian">Waffles - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item vegan">Oatmeal - <span class="tag vegan">Vegan</span></li>
+            <li class="item breakfast gluten-free">Scrambled Eggs - <span class="tag gluten-free">Gluten-Free</span></li>
+            <li class="item lunch vegetarian">Grilled Cheese Sandwich - <span class="tag vegetarian">Vegetarian</span></li>
+            <li class="item lunch vegan">Quinoa Salad - <span class="tag vegan">Vegan</span></li>
+            <li class="item dinner gluten-free">Chicken Tacos - <span class="tag gluten-free">Gluten-Free</span></li>
+            <li class="item lunch">Macaroni and Cheese</li>
+            <li class="item lunch">French Fries</li>
+            <li class="item dinner vegetarian">Margherita Pizza - <span class="tag vegetarian">Vegetarian</span></li>
+        <li class="item lunch vegan">Stir-Fried Vegetables - <span class="tag vegan">Vegan</span></li>
+        <li class="item lunch gluten-free">Grilled Salmon - <span class="tag gluten-free">Gluten-Free</span></li>
+        <li class="item lunch dinner vegan">Vegan Burger - <span class="tag vegan">Vegan</span></li>
+        <li class="item lunch">Buffalo Wings</li>
+        <li class="item dinner ">Turkey Sandwich</li>
+        <li class="item breakfast vegetarian">Caprese Salad - <span class="tag vegetarian">Vegetarian</span></li>
+        <li class="item dinner vegan">Hummus Wrap - <span class="tag vegan">Vegan</span></li>
+        <li class="item gluten-free">Grilled Chicken Breast - <span class="tag gluten-free">Gluten-Free</span></li>
+
+        <!-- Dinner Items -->
+        <li class="item lunch">Roast Beef</li>
+        <li class="item dinner gluten-free">Baked Potato - <span class="tag gluten-free">Gluten-Free</span></li>
+        <li class="item dinner vegetarian">Stuffed Bell Peppers - <span class="tag vegetarian">Vegetarian</span></li>
+        <li class="item breakfast vegan">Lentil Soup - <span class="tag vegan">Vegan</span></li>
+
+        <!-- Dessert Items -->
+        <li class="item lunch">Apple Pie</li>
+        <li class="item dinner gluten-free">Vanilla Pudding - <span class="tag gluten-free">Gluten-Free</span></li>
+        <li class="item lunch">Brownies</li>
+        <li class="item lunch vegetarian">Cheesecake - <span class="tag vegetarian">Vegetarian</span></li>
+        </ul>
+    </section>
+    </section>
+
+    <section class="featured-section">
+        <div class="featured-content">
+            <!-- Specials or Upcoming Menus -->
+            <div class="specials">
+                <h2>Specials & Upcoming Menus</h2>
+                <ul>
+                    <li><strong>Taco Tuesday</strong> - Join us for delicious tacos and sides every Tuesday!</li>
+                    <li><strong>Vegan Night</strong> - Enjoy a plant-based menu every Thursday evening.</li>
+                    <li><strong>Pizza Friday</strong> - Fresh, hot pizzas every Friday for lunch and dinner.</li>
+                </ul>
+            </div>
+    
+            <!-- Feedback Highlight -->
+            <div class="feedback">
+                <h2>We Value Your Input!</h2>
+                <p>Help us improve your dining experience. <a href="feedback.html">Click here</a> to share your feedback.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+<footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+    <div class="footer-links">
+        <a href="dining-hours.html" style="color: #fff; text-decoration: none; margin: 0 15px;">Dining Hall Hours & Locations</a>
+        <a href="privacy-policy.html" style="color: #fff; text-decoration: none; margin: 0 15px;">Privacy Policy</a>
+        <a href="accessibility.html" style="color: #fff; text-decoration: none; margin: 0 15px;">Accessibility</a>
+    </div>
+    <p style="margin-top: 10px; font-size: 14px;">&copy; 2024 NJIT Dining Services. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script> <!-- Link the external JavaScript file -->
+
+</body>
+
+</html>
+ 
