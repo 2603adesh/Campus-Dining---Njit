@@ -456,13 +456,32 @@ a.all-hours-link:hover {
 }
 
 /* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-    .top {
-        flex-direction: column; /* Stack containers vertically */
+@media (max-width: 480px) {
+    .header-logo {
+        padding: 5px; /* Reduce header padding */
     }
 
-    .locations,
+    .logo-text {
+        font-size: 1rem; /* Further reduce logo text size */
+    }
+
+    .search-bar {
+        padding: 5px; /* Smaller padding for search bar */
+    }
+
+    nav a {
+        font-size: 12px; /* Smaller navigation links */
+    }
+
     .menu {
-        max-width: 100%; /* Full width for smaller screens */
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .filters label {
+        font-size: 10px; /* Adjust filter labels */
+    }
+
+    .menu-list li {
+        padding: 5px;
     }
 }
